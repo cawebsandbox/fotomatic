@@ -299,7 +299,9 @@ header .mobile {
 
 #filters-section .content h2 {
   font-size: 2.25rem;
+  font-family: "Roboto-Bold";
   font-weight: bold;
+  opacity: 100%;
   color: white;
 }
 
@@ -311,8 +313,13 @@ header .mobile {
 }
 
 #filters-section .images-container {
+  display: flex;
   max-width: 100%;
   padding: 0 1%;
+}
+
+#filters-section img {
+  width: 100%;
 }
 
 @media only screen and (max-width: 760px) {
