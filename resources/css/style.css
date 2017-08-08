@@ -84,6 +84,10 @@ header .mobile {
     display: none;
   }
 
+  header {
+    height: 3rem;
+  }
+
   header .mobile {
     display: block;
     width: 100%;
@@ -175,7 +179,8 @@ header .mobile {
   }
 
   #sign-up-cta {
-    position: static;
+    margin: 0;
+    position: relative;
     width: auto;
     height: auto;
     background-color: transparent;
@@ -183,7 +188,7 @@ header .mobile {
   }
 
   #sign-up-cta .content {
-    margin-top: 0;
+    margin: 0;
   }
 
   #sign-up-cta .email {
@@ -227,8 +232,9 @@ header .mobile {
   padding: 2rem;
   margin: 0px 1.875rem;
   background-color: white;
-  height: 35rem;
+  max-height: 35rem;
   max-width: 40rem;
+  flex-shrink: 2;
 }
 
 .feature .image-container {
@@ -381,6 +387,7 @@ header .mobile {
 @media only screen and (max-width: 760px) {
   #quotes-section .content {
     padding: 1.875rem .625rem;
+    display: block;
   }
 
   #quotes-section .quote {
@@ -392,6 +399,13 @@ header .mobile {
     display: block;
     padding-top: 1rem;
     margin: auto;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #quotes-section .content {
+    padding: 1.875rem .625rem;
+    display: block;
   }
 }
 
